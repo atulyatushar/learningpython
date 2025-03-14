@@ -15,6 +15,5 @@ plt.xlabel('m (kg)')
 plt.ylabel('V (l)')
 plt.show()
 
-# yo
 
 

@@ -15,10 +15,15 @@ plt.xlabel('m (kg)')
 plt.ylabel('V (l)')
 
 # Fit a linear regression line
-slope, intercept = np.polyfit(m, V, 1)
+slope, intercept = np.polyfit(m, V, 1) # 1 represents a linear model
 plt.plot(m, slope * m + intercept, '-r')
+# This line utilizes the calculated slope and intercept
+# to generate the y-values for the regression line corresponding to
+# each mass value in the m array, based on the equation of a straight line (y = mx + c).
+# The format string '-r' specifies the visual style of the line:
+# '-' indicates a solid line, and 'r' specifies the color red.
 
-# Add a title and show the plot
+# Add a title, add grid and show the plot
 plt.title('Mass vs. Volume')
 plt.grid(True)
 plt.show()
