@@ -14,5 +14,5 @@ while y[i] > 0.0:
     y[i] = 100.0 - 4.9*t[i]**2
 # stop1
 plot(t[0:i], y[0:i])
-xlabel('t [s]'); ylabel('y [m]')
+xlabel('t = time [s]'); ylabel('y = height [m]')
 show()
